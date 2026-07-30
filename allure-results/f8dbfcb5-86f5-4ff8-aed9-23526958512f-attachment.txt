@@ -1,0 +1,3 @@
+ Registration is completed..!
+ Logout is Completed..!
+Login is completed!

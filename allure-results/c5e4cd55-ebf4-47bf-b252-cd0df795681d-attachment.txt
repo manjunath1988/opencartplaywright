@@ -1,0 +1,5 @@
+ Registration is completed..!
+ Logout is Completed..!
+Login is completed!
+Product not found:Macbook
+Product added to the Cart..!
