@@ -26,12 +26,12 @@ jobs:
       - name: Install Playwright Browsers
         run: npx playwright install
 
-      - name: Run Sanity Tests
+      - name: Run End-to-End Tests
         #run: npx playwright test
         #run: npx playwright test --grep "@sanity"
         #run: npm run test:sanity
-        #run: playwright test --grep "@end-to-end"
-        run: npm run test:end-to-end
+        run: npx playwright test --grep "@end-to-end"
+        #run: npm run test:end-to-end
 
       - name: Upload Playwright HTML report
         if: always()
