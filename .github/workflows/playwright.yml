@@ -9,7 +9,7 @@ jobs:
   test:
     timeout-minutes: 60
     runs-on: windows-latest
-    
+
     steps:
     - name: Checkout Repository
     - uses: actions/Checkout@v4
@@ -23,7 +23,7 @@ jobs:
       run: npm ci
 
     - name: Install Playwright Browsers
-      run: npx playwright install --with-deps
+      run:  playwright install --with-deps
 
     - name: Run Playwright tests
       #run: npx playwright test
@@ -37,3 +37,4 @@ jobs:
         name: playwright-report
         path: playwright-report/
         retention-days: 30
+        
